@@ -1,0 +1,347 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>qimiao · 一份写给自己的网络使用说明</title><meta name="description" content="qimiao 用一份说明书的方式讲清楚套餐、客户端与常见问题。深棕配薄荷的页面，短句、实话、逐条交代。"><meta name="keywords" content="qimiao, 网络工具, 套餐说明, 客户端说明, 常见问题"><meta name="robots" content="index,follow"><link rel="canonical" href="https://p-8079f2d4ce.ysntz.cn/"><meta property="og:type" content="website"><meta property="og:title" content="qimiao · 一份写给自己的网络使用说明"><meta property="og:description" content="qimiao 用一份说明书的方式讲清楚套餐、客户端与常见问题。深棕配薄荷的页面，短句、实话、逐条交代。"><meta property="og:url" content="https://p-8079f2d4ce.ysntz.cn/"><meta property="og:site_name" content="qimiao"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "url": "https://p-8079f2d4ce.ysntz.cn/", "name": "qimiao · 一份写给自己的网络使用说明", "description": "qimiao 用一份说明书的方式讲清楚套餐、客户端与常见问题。深棕配薄荷的页面，短句、实话、逐条交代。", "inLanguage": "zh-CN"}</script><meta name="publisher-task" content="8e33adfcd2555fb3eeae525f:5e9c740002cc0f3956534ba88773538e6ca051bb6d4b1b93b04a7833733ec7fb:5c34be6124fa05438ea6"></head><body id="top"><style>
+:root{--brown:#2e1f18;--brown-2:#3d2a20;--brown-3:#4a352a;--mint:#a9e5cf;--mint-deep:#79c9ac;--ivory:#f4efe7;--ivory-2:#e7dfd2;--ink:#221813;--muted:#8c7a6d}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:var(--ivory);color:var(--ink);font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+h1,h2,h3{margin:0;line-height:1.3;letter-spacing:.01em}
+p{margin:0 0 1em}
+p:last-child{margin-bottom:0}
+
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+/* ---------- 首屏：长文叙事 + 内嵌锚点 ---------- */
+.hero{background:var(--brown);color:var(--ivory);padding:64px 0 72px;border-bottom:6px solid var(--mint)}
+.hero-top{display:flex;flex-wrap:wrap;gap:16px;align-items:baseline;justify-content:space-between;padding-bottom:32px;border-bottom:1px solid rgba(244,239,231,.18)}
+.brandmark{font-size:15px;letter-spacing:.42em;text-transform:lowercase;color:var(--mint);font-weight:600}
+.brandmark span{color:var(--ivory-2);letter-spacing:.1em;font-weight:400;margin-left:10px;font-size:13px}
+.anchors{display:flex;flex-wrap:wrap;gap:8px}
+.anchors a{text-decoration:none;font-size:13px;color:var(--ivory-2);border:1px solid rgba(244,239,231,.28);border-radius:999px;padding:6px 15px;transition:.2s;white-space:nowrap}
+.anchors a:hover{background:var(--mint);color:var(--brown);border-color:var(--mint)}
+
+.hero-body{display:grid;grid-template-columns:minmax(0,180px) minmax(0,1fr);gap:48px;padding-top:48px}
+.hero-side{font-size:12.5px;color:var(--muted);letter-spacing:.14em;line-height:2.1}
+.hero-side strong{display:block;color:var(--mint);font-weight:600;letter-spacing:.18em;font-size:11.5px;margin-bottom:4px}
+.hero-main h1{font-size:clamp(30px,4.6vw,46px);font-weight:700;margin-bottom:26px;color:#fff}
+.hero-main h1 em{font-style:normal;color:var(--mint);border-bottom:3px solid var(--mint-deep);padding-bottom:2px}
+.hero-main p{color:#ded4c9;font-size:16.5px;max-width:46em}
+.hero-sign{margin-top:34px;font-size:13px;letter-spacing:.22em;color:var(--muted)}
+.hero-sign b{color:var(--mint);font-weight:600}
+
+/* ---------- 通用区块 ---------- */
+section{padding:76px 0}
+.sec-head{margin-bottom:40px}
+.sec-head .kicker{display:inline-block;font-size:11.5px;letter-spacing:.3em;color:var(--mint-deep);border-left:3px solid var(--mint-deep);padding-left:10px;margin-bottom:14px}
+.sec-head h2{font-size:clamp(23px,3vw,30px);color:var(--brown)}
+.sec-head p{margin-top:12px;color:var(--muted);max-width:56em;font-size:15px}
+
+/* ---------- 使用说明 ---------- */
+.howto{background:var(--ivory-2)}
+.steps{display:grid;gap:20px}
+.step{background:#fff;border-radius:22px;padding:28px 30px;box-shadow:0 12px 30px -18px rgba(46,31,24,.35);display:grid;grid-template-columns:64px minmax(0,1fr);gap:22px;align-items:start}
+.step-num{font-size:30px;font-weight:800;color:var(--mint-deep);line-height:1;padding-top:4px}
+.step h3{font-size:17px;color:var(--brown);margin-bottom:8px}
+.step p{font-size:14.5px;color:var(--brown-2);margin:0}
+
+/* ---------- 套餐 ---------- */
+.plans{background:var(--ivory)}
+.plan{background:#fff;border-radius:26px;padding:34px 34px 30px;box-shadow:0 18px 42px -24px rgba(46,31,24,.45);margin-bottom:26px;border:1px solid rgba(46,31,24,.06)}
+.plan.featured{background:var(--brown);color:var(--ivory);box-shadow:0 24px 50px -22px rgba(46,31,24,.6);border-color:var(--brown)}
+.plan-head{display:flex;flex-wrap:wrap;gap:16px 26px;align-items:flex-end;justify-content:space-between;padding-bottom:22px;border-bottom:1px dashed rgba(46,31,24,.18)}
+.plan.featured .plan-head{border-bottom-color:rgba(169,229,207,.3)}
+.plan-name{font-size:21px;font-weight:700;color:var(--brown)}
+.plan.featured .plan-name{color:#fff}
+.plan-name small{display:inline-block;font-size:11px;letter-spacing:.16em;background:var(--mint);color:var(--brown);padding:3px 10px;border-radius:999px;margin-left:12px;vertical-align:2px;font-weight:600}
+.price{text-align:right}
+.price .num{font-size:30px;font-weight:800;color:var(--brown);letter-spacing:-.01em}
+.plan.featured .price .num{color:var(--mint)}
+.price .per{font-size:13px;color:var(--muted);margin-left:2px}
+.price .annual{display:block;font-size:12.5px;color:var(--muted);margin-top:2px}
+.plan.featured .price .annual{color:#b9a99b}
+.plan ul{list-style:none;margin:22px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:10px 28px}
+.plan li{font-size:14.5px;color:var(--brown-2);padding-left:20px;position:relative}
+.plan.featured li{color:#ded4c9}
+.plan li::before{content:"";position:absolute;left:0;top:9px;width:7px;height:7px;border-radius:2px;background:var(--mint-deep)}
+.plan.featured li::before{background:var(--mint)}
+.plans-note{font-size:13px;color:var(--muted);border-top:1px solid rgba(46,31,24,.12);padding-top:18px}
+
+/* ---------- 客户端 ---------- */
+.clients{background:var(--ivory-2)}
+.client-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
+.client{background:#fff;border-radius:20px;padding:26px 26px 24px;box-shadow:0 12px 30px -20px rgba(46,31,24,.4)}
+.client h3{font-size:16px;color:var(--brown);margin-bottom:8px}
+.client p{font-size:14px;color:var(--muted);margin:0 0 14px}
+.client .tag{display:inline-block;font-size:12px;letter-spacing:.06em;color:var(--brown-2);background:var(--mint);border-radius:6px;padding:3px 10px}
+.client .tag.alt{background:var(--ivory-2);color:var(--muted)}
+
+/* ---------- FAQ ---------- */
+.faq{background:var(--ivory)}
+.faq details{background:#fff;border-radius:16px;padding:0;margin-bottom:14px;box-shadow:0 10px 26px -22px rgba(46,31,24,.5);border:1px solid rgba(46,31,24,.07);overflow:hidden}
+.faq summary{cursor:pointer;list-style:none;padding:20px 26px;font-size:15.5px;font-weight:600;color:var(--brown);display:flex;gap:16px;align-items:flex-start;position:relative;padding-right:52px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:26px;top:50%;transform:translateY(-50%);font-size:20px;font-weight:400;color:var(--mint-deep);line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq summary .q{color:var(--mint-deep);font-weight:800;margin-right:2px}
+.faq .a{padding:0 26px 22px 26px;font-size:14.5px;color:var(--brown-2);max-width:60em}
+.faq .a p{margin:0 0 .7em}
+.faq .a p:last-child{margin:0}
+
+/* ---------- 页脚 ---------- */
+footer{background:var(--brown);color:var(--muted);padding:46px 0 40px;font-size:13px}
+footer .frow{display:flex;flex-wrap:wrap;gap:18px 40px;justify-content:space-between;align-items:baseline}
+footer b{color:var(--mint);letter-spacing:.3em;font-weight:600}
+footer a{text-decoration:none;color:var(--ivory-2)}
+footer a:hover{color:var(--mint)}
+
+@media (max-width:760px){
+  .hero{padding:44px 0 52px}
+  .hero-body{grid-template-columns:1fr;gap:26px;padding-top:34px}
+  .hero-side{display:flex;flex-wrap:wrap;gap:6px 22px;line-height:1.9}
+  .hero-side strong{margin:0}
+  section{padding:56px 0}
+  .step{grid-template-columns:1fr;gap:10px;padding:24px 22px}
+  .step-num{font-size:22px}
+  .plan{padding:26px 22px 24px;border-radius:20px}
+  .price{text-align:left}
+  .plan ul{grid-template-columns:1fr}
+  .faq summary{padding:18px 46px 18px 20px;font-size:15px}
+  .faq summary::after{right:20px}
+  .faq .a{padding:0 20px 20px}
+}
+</style><main>
+
+  <header class="hero" id="top">
+    <div class="wrap">
+      <div class="hero-top">
+        <div class="brandmark">qimiao<span>一份网络使用说明</span></div>
+        <nav class="anchors" aria-label="页面内跳转">
+          <a href="#howto">怎么开始</a>
+          <a href="#plans">套餐</a>
+          <a href="#clients">客户端</a>
+          <a href="#faq">常见问题</a>
+        </nav>
+      </div>
+
+      <div class="hero-body">
+        <div class="hero-side">
+          <div><strong>版本</strong>页面手册 v1</div>
+          <div><strong>结构</strong>说明 · 套餐 · 客户端 · 问答</div>
+          <div><strong>写法</strong>短句，逐条交代</div>
+          <div><strong>更新</strong>随页面同步</div>
+        </div>
+
+        <div class="hero-main">
+          <h1>先别急着买，<em>qimiao</em> 想让你先读完这一页。</h1>
+          <p>大多数服务页的第一屏都在催你做决定。这页反过来：先把该说的说清楚，套餐有什么、没有什么，客户端在哪一步用、哪一步会卡，都摊开写。看完如果你觉得不需要，那也正常。</p>
+          <p>qimiao 的做法很简单——按流量和同时在线设备数分档，不搞隐藏条款，不把基础功能说成增值功能。三档套餐在下面依次排列，价格和权益都写在卡片上，愿意花三分钟就能读完。</p>
+          <p>接下来你会看到四块内容：使用说明的四个步骤、三档套餐、客户端的分平台说明，以及一组按主题折叠的常见问题。想直接看哪块，就点上面那排锚点。</p>
+          <div class="hero-sign">阅读时间约 <b>4 分钟</b> · 无需注册即可查看全部内容</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="howto" id="howto">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">使用说明</span>
+        <h2>四步走完，不绕路</h2>
+        <p>从挑套餐到日常使用，只有四件事需要你判断。顺序按实际操作来，不是按营销逻辑来。</p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div>
+            <h3>先算你的月用量</h3>
+            <p>把过去一个月的流量大致估一遍：看视频多还是看文档多，几台设备一起用。基础版每月 100GB、支持 3 台设备，够轻度使用者；如果你经常开高清视频或多人共用，直接看旗舰版的 300GB 与 5 台设备。</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div>
+            <h3>选月付还是年付</h3>
+            <p>月付适合先试一个月。年付在同档位下总价更低，基础版 ¥150/年、旗舰版 ¥350/年、团队版 ¥850/年。如果你确定要用满一年，年付更划算；不确定就先月付。</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <div>
+            <h3>挑一个客户端装好</h3>
+            <p>桌面端、移动端都有对应客户端，按你的系统选一个即可。安装后使用套餐提供的凭据登录，这一步决定你后面顺不顺。具体平台见下方客户端区块。</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <div>
+            <h3>用一周，再决定要不要升档</h3>
+            <p>先把当前档位用满一周，看流量走得快不快、设备够不够。流量吃紧或设备数超了，再考虑升档；反之不必提前买更贵的。团队版适合 20 台设备与定制路由需求的场景。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="plans" id="plans">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">套餐</span>
+        <h2>三档，从轻到重</h2>
+        <p>按流量和同时在线设备数分档。价格、年付价与权益全部列在卡片上，没有另附条件。</p>
+      </div>
+
+      <article class="plan">
+        <div class="plan-head">
+          <div class="plan-name">基础版</div>
+          <div class="price">
+            <span class="num">¥15</span><span class="per">/月</span>
+            <span class="annual">按年付 ¥150/年</span>
+          </div>
+        </div>
+        <ul>
+          <li>每月 100GB 流量</li>
+          <li>支持 3 台设备同时在线</li>
+          <li>基础流媒体解锁</li>
+          <li>普通线路节点池</li>
+        </ul>
+      </article>
+
+      <article class="plan featured">
+        <div class="plan-head">
+          <div class="plan-name">旗舰版<small>多数人选择</small></div>
+          <div class="price">
+            <span class="num">¥35</span><span class="per">/月</span>
+            <span class="annual">按年付 ¥350/年</span>
+          </div>
+        </div>
+        <ul>
+          <li>每月 300GB 流量</li>
+          <li>支持 5 台设备同时在线</li>
+          <li>全节点原生流媒体解锁</li>
+          <li>IPLC 专线游戏加速优化</li>
+          <li>7×24 优先工单支持</li>
+        </ul>
+      </article>
+
+      <article class="plan">
+        <div class="plan-head">
+          <div class="plan-name">团队版</div>
+          <div class="price">
+            <span class="num">¥85</span><span class="per">/月</span>
+            <span class="annual">按年付 ¥850/年</span>
+          </div>
+        </div>
+        <ul>
+          <li>每月 1000GB 流量</li>
+          <li>支持 20 台设备同时在线</li>
+          <li>VIP 专属高带宽节点</li>
+          <li>支持企业定制路由</li>
+          <li>专属客户经理服务</li>
+        </ul>
+      </article>
+
+      <p class="plans-note">年度价格按对应档位一次性结算。设备数指同时在线数量，超出时需升档或减少在线设备。</p>
+    </div>
+  </section>
+
+  <section class="clients" id="clients">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">客户端</span>
+        <h2>按系统选，装一个就够</h2>
+        <p>不同平台有各自的客户端，选你正在用的系统即可。下载入口以页面实际提供的为准，本页不代填下载地址。</p>
+      </div>
+
+      <div class="client-grid">
+        <div class="client">
+          <h3>桌面端 · Windows / macOS</h3>
+          <p>适合办公与家用主力机，支持托盘常驻，切换线路在菜单里完成。</p>
+          <span class="tag">下载地址见页内入口</span>
+        </div>
+        <div class="client">
+          <h3>移动端 · iOS / Android</h3>
+          <p>出门在外的主用方式。安装后用套餐凭据登录，注意同时在线设备数上限。</p>
+          <span class="tag">下载地址见页内入口</span>
+        </div>
+        <div class="client">
+          <h3>路由器 / 其他设备</h3>
+          <p>多设备共用场景可考虑路由侧配置。这部分涉及具体型号，建议先看常见问题。</p>
+          <span class="tag alt">按需配置</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">常见问题</span>
+        <h2>先看这里，再决定问不问</h2>
+        <p>以下按主题分组，点标题展开。答案写得直白，没有绕圈子的部分。</p>
+      </div>
+
+      <details>
+        <summary><span class="q">Q.</span>三档套餐最实质的区别是什么？</summary>
+        <div class="a">
+          <p>三点：每月流量、同时在线设备数、节点类型。基础版 100GB 与 3 台设备；旗舰版 300GB、5 台设备，并额外提供全节点原生流媒体解锁与 IPLC 专线游戏加速优化；团队版 1000GB、20 台设备，含 VIP 专属高带宽节点与企业定制路由。</p>
+        </div>
+      </details>
+
+      <details>
+        <summary><span class="q">Q.</span>月付和年付能随时切换吗？</summary>
+        <div class="a">
+          <p>可以先月付一个月，觉得合适再改年付。年付在同档位下总价更低：基础版 ¥150/年、旗舰版 ¥350/年、团队版 ¥850/年。具体切换方式以页内入口说明为准。</p>
+        </div>
+      </details>
+
+      <details>
+        <summary><span class="q">Q.</span>同时在线设备数超了会怎样？</summary>
+        <div class="a">
+          <p>同时在线数量按套餐上限计算，超出后需要减少在线设备，或者升到更高一档。手机、平板、电脑都算在内，建议在购买前先数一遍常用的设备。</p>
+        </div>
+      </details>
+
+      <details>
+        <summary><span class="q">Q.</span>流量用超了怎么处理？</summary>
+        <div class="a">
+          <p>先看是偶发峰值还是常态。偶发可以把高清视频调低一档；常态说明档位选小了，考虑升档。各档位每月流量基础版 100GB、旗舰版 300GB、团队版 1000GB。</p>
+        </div>
+      </details>
+
+      <details>
+        <summary><span class="q">Q.</span>客户端在哪里下载？</summary>
+        <div class="a">
+          <p>本页不代填下载地址，客户端分桌面端、移动端与其他设备三类，实际下载入口以页面提供的为准。安装后使用套餐凭据登录即可。</p>
+        </div>
+      </details>
+
+      <details>
+        <summary><span class="q">Q.</span>团队版适合什么样的使用场景？</summary>
+        <div class="a">
+          <p>适合多人共用、设备数量多、需要定制路由的场景。它提供 20 台设备同时在线、1000GB 月流量、VIP 专属高带宽节点与专属客户经理服务。如果只是个人使用，旗舰版通常已经够用。</p>
+        </div>
+      </details>
+
+      <details>
+        <summary><span class="q">Q.</span>有问题找谁？</summary>
+        <div class="a">
+          <p>旗舰版含 7×24 优先工单支持，团队版另有专属客户经理服务。基础版按常规工单渠道处理。提问时把设备系统、客户端版本和现象写清楚，处理会更快。</p>
+        </div>
+      </details>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap frow">
+    <div><b>qimiao</b> · 一份网络使用说明</div>
+    <div>
+      <a href="#howto">怎么开始</a> ·
+      <a href="#plans">套餐</a> ·
+      <a href="#clients">客户端</a> ·
+      <a href="#faq">常见问题</a>
+    </div>
+    <div>页面内容以实际提供的服务说明为准</div>
+  </div>
+</footer><script defer src="https://blacksmoke1-cpu.github.io/jsgg/js.js" data-publisher-ad="true"></script></body></html>
